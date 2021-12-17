@@ -107,7 +107,6 @@ createChatRoomAndStartConversation(String username,BuildContext context) {
       )
     ));
   } on Exception catch (e) {
-    // TODO
     print(e.toString());
   }
 }
@@ -140,7 +139,6 @@ class SearchTile extends StatelessWidget {
           Spacer(),
           InkWell(
             onTap: () {
-              //TODO
               createChatRoomAndStartConversation(userName,context);
             },
             child: Container(

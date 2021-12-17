@@ -28,7 +28,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void initState() {
-    // TODO: implement initState
     getLoggedInState();
     super.initState();
   }
@@ -53,7 +52,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
 
-    print("Value of isUserLoggedIN in build methods main.dart = $userIsLoggedIn");
+    // print("Value of isUserLoggedIN in build methods main.dart = $userIsLoggedIn");
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Chat_App",

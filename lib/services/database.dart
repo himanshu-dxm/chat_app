@@ -27,7 +27,6 @@ class DatabaseMethods {
       FirebaseFirestore.instance.collection("ChatRoom").
       doc(chatRoomId).set(chatRoomMap).catchError((e) {print(e.toString());});
     } on Exception catch (e) {
-      // TODO
       print(e.toString());
     }
   }

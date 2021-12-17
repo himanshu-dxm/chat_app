@@ -21,6 +21,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
   ScrollController _controller = ScrollController();
 
   Stream<QuerySnapshot> chatMessageStream = FirebaseFirestore.instance.collection("users").snapshots();
+
   
   Widget ChatMessageList() {
     return StreamBuilder<QuerySnapshot>(
@@ -71,7 +72,6 @@ class _ConversationScreenState extends State<ConversationScreen> {
   @override
   void initState() {
     print(databaseMethods.getConversationMesssages(widget.chatRoomId));
-    // TODO: implement initState
     setState(() {
     });
     databaseMethods.getConversationMesssages(widget.chatRoomId).

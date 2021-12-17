@@ -39,7 +39,6 @@ class _ChatRoomsState extends State<ChatRooms> {
 
   @override
   void initState() {
-    // TODO: implement initState
     getUserInfo();
     print("$chatRoomsStream");
     print("In init State mName = ${Constants.myName}");
